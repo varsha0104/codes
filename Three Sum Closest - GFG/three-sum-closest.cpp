@@ -39,7 +39,7 @@ class Solution{
                    int len=abs((arr[i]+arr[j]+arr[k])-target);
                    if(mini>=len){
                        mini=len;
-                       m=arr[i]+arr[j]+arr[k];
+                       m=arr[i]+arr[j]+arr[p];
                    }
                    k--;
                }
