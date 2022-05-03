@@ -41,7 +41,7 @@ int main()
    }
    
 
-/*
+/* 2nd way
 long long int maxSum(int arr[], int n)
 {
     sort(arr,arr+n);
@@ -60,7 +60,9 @@ long long int maxSum(int arr[], int n)
    return sum;
 }
 */
-/*
+
+
+/* 3rd way
 long long int maxSum(int arr[], int n)
 {
    sort(arr,arr+n);
@@ -75,7 +77,9 @@ long long int maxSum(int arr[], int n)
    return sum;
 } 
 */
-/*
+
+
+/* 4th way
 long long int maxSum(int arr[], int n)
 {
    sort(arr,arr+n);
