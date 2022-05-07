@@ -23,13 +23,30 @@ class Solution{
         return result-sum;
     }
     */
-    
+    /*
      sort(array.begin(), array.end());
       for(int i=1; i<n; i++) {
           if(array[i-1]!=i) {
               return i;
           }
       }
+    */
+    
+    /*
+      int sum=0;
+     int total=(n*(n+1)/2);
+     for(int i=0;i<n-1;i++){
+         sum=sum+array[i];
+     }
+      return total-sum;
+     */
+     
+      sort(array.begin(),array.end());
+       for(int i=0;i<n;i++){
+           if(array[i]!=i+1){
+               return i+1;
+           }
+       }
     }
 };
 
