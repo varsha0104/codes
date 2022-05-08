@@ -1,5 +1,5 @@
 # Number of pairs
-## Medium 
+##  Medium 
 <div class="problem-statement">
                 <p></p><p><span style="font-size:18px">Given two arrays <strong>X</strong> and <strong>Y</strong> of positive integers, find the number of pairs such that&nbsp;<strong>x<sup>y</sup> &gt; y<sup>x</sup></strong>&nbsp;<strong>(raised to power of)</strong> where x is an element from X and y is an element from Y.</span><br>
 <br>
