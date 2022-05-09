@@ -119,6 +119,8 @@ int intersectPoint(Node* head1, Node* head2)
       int len1=0, len2=0 , diff; 
       Node *temp1 = head1;
       Node *temp2 = head2;
+    
+      // calculate the length of both the linked lists
       while(temp1 != NULL){
           len1++;
           temp1 = temp1 -> next;
@@ -133,15 +135,16 @@ int intersectPoint(Node* head1, Node* head2)
       
       diff = abs(len1-len2);
       
+      //if length of 1st linked list is greater
       if(len1>len2){
           for(int i=0 ; i<diff ; i++)
               temp1 = temp1 -> next;
       }
-      else{
+      else{     //if length of 2nd linked list is greater
           for(int i=0 ; i<diff ; i++)
               temp2 = temp2 -> next;
       }      
-          
+        //Now traverse the linked list till the intersection point of the linked lists  
         while(temp1 != temp2){
             temp1 = temp1 -> next;
             temp2 = temp2 -> next;
