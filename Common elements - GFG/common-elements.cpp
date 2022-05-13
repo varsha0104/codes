@@ -26,10 +26,13 @@ class Solution
                 else                //if(C[c]<A[a])
                     c++;    
                     
+                //x = take the last element
                 int x = A[a-1];     
                 int y = B[b-1];   
                 int z = C[c-1];     
                 
+                //if A[a]==x than increase a++ .
+                //so the same element will not be inserted in the vector
                 while(A[a] == x)
                     a++;        
                 while(B[b] == y)
