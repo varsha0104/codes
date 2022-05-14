@@ -56,7 +56,7 @@ vector<int> leaders(int a[], int n){
         vector<int>x;
         stack<int>s;
         s.push(a[n-1]);
-        for(int i=n-1;i>=0;i--)
+        for(int i=n-1;i>=0;i--)     //it should be i=n-2;
         {
             if(a[i]>=s.top())
             {
@@ -78,6 +78,8 @@ variable and add the element to another array or stack.
 Then print the stack.
 */
 
+
+//correct
 vector<int> leaders(int arr[], int n){
        // Code here
        vector<int>v;
@@ -95,6 +97,33 @@ vector<int> leaders(int arr[], int n){
        reverse(v.begin(),v.end());
        return v;
    }
+   
+   
+   
+   /* correct
+   vector<int> leaders(int a[], int n){
+        vector<int> v;
+        
+        long long max = a[n-1];
+        
+        //We start traversing the array from last element.
+        for(long long i =n-1; i >= 0; i--){
+            //Comparing the current element with the maximum element stored. 
+            //If current element is greater than max, we add the element.
+            if(a[i] >= max){
+                //Updating the maximum element.
+                max = a[i];
+                //Storing the current element in vector for leaders.
+                v.push_back(max);
+            }
+        }
+        //Finally reversing the vector in which leaders are stored.
+        reverse(v.begin(), v.end());
+        //returning the vector.
+        return v;
+        
+    }
+   */
 };
 
 // { Driver Code Starts.
