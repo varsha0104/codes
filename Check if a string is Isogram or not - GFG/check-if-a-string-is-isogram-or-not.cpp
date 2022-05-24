@@ -34,7 +34,7 @@ class Solution
        }
        for(int i=0;i<s.length();i++)
        {
-           if(m1[s[i]]!=1)
+           if(m1[s[i]]>1)
            {
                return false;
            }
