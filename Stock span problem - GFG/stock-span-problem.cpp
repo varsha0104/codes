@@ -9,6 +9,7 @@ class Solution
 {
     public:
     //Function to calculate the span of stockâ€™s price for all n days.
+    //similar to nearest greater to left
     vector <int> calculateSpan(int price[], int n)
     {
         stack<pair<int,int>>s;
